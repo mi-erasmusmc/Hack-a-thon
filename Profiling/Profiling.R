@@ -18,5 +18,3 @@ profvis({
   abline(m, col = "red")
 })
 
-# Learning curve example
-source("LearningCurvesExample2.R")

@@ -17,13 +17,13 @@ library(SqlRender)
 # connection details for the aws instance (password will be provided)
 dbms <- "redshift"
 user <- "synpuf_training"
-password <- "<password>"
+password <- "<password"
 
 # for the 1000 sample:
-server <- "ohdsi-dev.c4fnc73ju5ib.us-east-1.redshift.amazonaws.com/synpuf1k"
+server <- "ohdsi.cxmbbsphpllo.us-east-1.redshift.amazonaws.com/synpuf1k"
 
 # for the 1% sample:
-server <- "ohdsi-dev.c4fnc73ju5ib.us-east-1.redshift.amazonaws.com/synpuf1pct"
+server <- "ohdsi.cxmbbsphpllo.us-east-1.redshift.amazonaws.com/synpuf1pct"
 port <- 5439
 connectionDetails <- createConnectionDetails(dbms = dbms,
                                              user = user,

@@ -1,5 +1,7 @@
 # Large-scale statistical computing Hack-a-thon
 
+UNDER DEVELOPMENT!
+
 In this Github you can find code, documents etc for
 the Large-scale statistical computing hack-a-thon 
 March 17th and 18th a GeorgiaTech in Atlanta.

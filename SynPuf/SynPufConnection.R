@@ -17,7 +17,7 @@ library(SqlRender)
 # connection details for the aws instance (password will be provided)
 dbms <- "redshift"
 user <- "synpuf_training"
-password <- "<password"
+password <- "<password>"
 
 # for the 1000 sample:
 server <- "ohdsi.cxmbbsphpllo.us-east-1.redshift.amazonaws.com/synpuf1k"
@@ -32,8 +32,8 @@ connectionDetails <- createConnectionDetails(dbms = dbms,
                                              port = port)
 connection <- connect(connectionDetails)
 
-sql <- translateSql("select count(*) from cdm.person", targetDialect = connectionDetails$dbms)$sql
-executeSql(connection, sql)
+sql <- translateSql("select * from cdm.person", targetDialect = connectionDetails$dbms)$sql
+result <- querySql(connection, sql)
 
 # The cdm schema contains all the cdm tabels and vocabulary and is read only
 # There is "scratch" schema that is writable in which you can create your own tables.

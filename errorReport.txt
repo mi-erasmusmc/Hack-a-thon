@@ -1,0 +1,31 @@
+DBMS:
+redshift
+
+Error:
+execute JDBC update query failed in dbSendUpdate ([Amazon](11320) A RowCount was expected but not generated from query "select * from cdm.person". The query was executed.)
+
+SQL:
+select * from cdm.person
+
+R version:
+R version 3.3.1 (2016-06-21)
+
+Platform:
+x86_64-apple-darwin13.4.0
+
+Attached base packages:
+- stats
+- graphics
+- grDevices
+- utils
+- datasets
+- methods
+- base
+
+Other attached packages:
+- SqlRender (1.2.0)
+- DatabaseConnector (1.9.2)
+- devtools (1.12.0)
+- RJDBC (0.2-5)
+- rJava (0.9-8)
+- DBI (0.5-1)
